@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+  font-size: 20px;
+  color:#333;
+  text-decoration: none;
+}
+
+.itsme{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.rounded-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family:"Oswald"
+}
+
+.aboutme{
+  background: lightgreen;
+  margin-bottom: 20px;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-align: center;
+  font-family: "Raleway";
+}
+
+.societyme{
+  background: lightblue;
+  margin-bottom: 20px;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-align: center;
+  font-family: "Raleway";
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(192, 0, 0);
+  text-decoration: underline;
+}
+
+a:visited {
+  color:rgb(114, 114, 255);
+}
+
+a:active {
+  color: orange;
+  text-decoration: none;
+}
+
+.hobbies {
+  background: lightpink;
+  margin-bottom: 20px;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-align: center;
+  font-family: "Raleway";
+}
+
+.slider-container {
+  position: relative;
+  width: auto;
+  height: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  display: block;
+  width: auto;
+  height: 100%; 
+  object-fit: contain; 
+  text-align: center;
+  margin: auto;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: black;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.prev-button:hover, .next-button:hover{
+  background:#555;
+}
+
+.prev-button:active, .next-button:active{
+  background:#333;
+}
+
+.forma{
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.192);
+  position: relative;
+  width: auto;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.anketa{
+  display:grid;
+  width:90%;
+  gap:5px;
+  justify-content: center;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.192);
+  position: relative;
+  width: auto;
+  max-width: 1000px;
+  margin:auto;
+  padding: 10px 15px;
+}
+
+.anketa h3{
+  font-family: "Raleway";
+}
+
+.anketa input{
+  width:auto;
+  font-size: 20px;
+  font-family: "Raleway";
+}
+
+.anketa textarea{
+  width:auto;
+  font-size: 20px;
+}
+
+.anketa_buttons{
+  display:flex;
+  justify-content: space-around;
+  margin: 30px -30px;
+}
+
+.clear_button{
+  background: #ee3835;
+}
+
+.clear_button:hover{
+  background:#a02321;
+}
+
+.send_button{
+  background: #adf33d;
+}
+
+.send_button:hover{
+  background: #5c9606;
+}
+
+.clear_button, .send_button{
+  margin:auto;
+  margin-bottom: 10px;
+  font-family: "Raleway";
+  border:none;
+  border-radius:10px;
+  padding: 4px 16px;
+  width:100px;
+  font-size:16px;
+  height:40px;
+  text-align: center;
+}
+
+.clear_button:hover, .send_button:hover{
+  color:darkblue;
+  text-decoration: underline;
+}
+
+.clear_button:active, .send_button:active{
+  color:rgb(217, 217, 217);
+  background:#222;
+}

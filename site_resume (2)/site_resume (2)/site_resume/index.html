@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gregor Mustang's College Resume Site</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="itsme">
+    <ul>
+      <li>
+        <div class="image-container">
+          <img class="rounded-image" src="images\logo_me.jpg" alt="My Image">
+        </div>
+      </li>
+      <li>
+        <h1>Григорий Калашников</h1>
+      </li>
+    </ul>
+    <br>
+  </div>
+
+  <br>
+
+  <div class="aboutme">
+    <p>Я учусь в <strong>Новосибирском колледже электроники и вычислительной техники</strong><br>Я занимаюсь <em>чтением книг и программированием.</em></p>
+  </div> 
+
+  <br>
+
+  <div class="societyme">
+    <p><strong>Список социальных сетей:</strong></p>
+    <ul>
+        <li><a href="https://vk.com/" target="_blank">Вконтакте</a> Gregor Mustang
+        <li><a href="https://t.me/" target="_blank">Телеграм</a> s h k a s h e k w a  @shkashekwa</li>
+        <li><a href="https://e.mail.ru/" target="_blank">Почта Mail.ru</a> Григорий Красавчиков</li>
+        <li><a href="https://discord.com/" target="_blank">Дискорд</a> s h k a s h e k w a</li>
+    </ul>
+  </div>
+
+  <div class="hobbies">
+    <h2>Мои хобби</h2>
+    <ul>
+        <li>Чтение книг, электронных и бумажных</li>
+        <li>Делать ежедневные записи в дневнике</li>
+        <li>Раз в неделю лежать и ничего не делать, для разрядки</li>
+        <li>Готовиться к чемпионатам</li>
+        <li>Саморазвитие</li>
+        <li>И, естественно, программирование</li>
+    </ul>
+  </div>
+
+  <main>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="images\image_1.jpg" alt="Это я">
+            <img src="images\image_2.jpg" alt="Это я">
+            <img src="images\image_3.jpg" alt="Это я">
+            <img src="images\image_4.jpg" alt="Это я">
+            <img src="images\image_6.jpg" alt="Это я">
+            <img src="images\image_7.jpg" alt="Это я">
+            <img src="images\image_8.jpg" alt="Это я">
+            <img src="images\image_9.jpg" alt="Это я">
+            <img src="images\image_10.jpg" alt="Это я">
+        </div>
+        <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+        <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button>
+    </div>
+  </main>
+
+  <div id="forma">
+    <form class="anketa" id="telegramForm">
+      <h3>Напиши мне че-нибудь</h3>
+      <input type="text" id="name" name="name" placeholder="Имя" maxlength="50" required>
+      <input type="tel" id="phone" name="phone" placeholder="7 ... ... .. .." minlength="11" maxlength="11" required>
+      <textarea placeholder="Сообщение..." class="formochka" id="message" name="message" maxlength="150" required></textarea>
+      <div class="anketa_buttons">
+          <button class="clear_button" type="button" onclick="clearForm()">Очистить</button>
+          <button class="send_button" type="button" onclick="sendMessage()">Отправить</button>
+      </div>
+    </form>
+  </div>
+    <script src="slider.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
