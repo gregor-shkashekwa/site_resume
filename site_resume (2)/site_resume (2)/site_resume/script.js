@@ -29,8 +29,8 @@ function sendMessage() {
         alert('Пожалуйста, заполните все поля!');
     }
     else{
-        var telegramToken = '6579830229:AAEDa4tMllPXWPCZOdpXNGgd_DNSnUEb-10';
-        var chatId = '-1002036213924';
+        var telegramToken = '';
+        var chatId = '';
   
         var url = `https://api.telegram.org/bot${telegramToken}/sendMessage`;
         var data = `chat_id=${chatId}&text=${encodeURIComponent(`Name: ${name}\nPhone: ${phone}\nMessage: ${message}`)}`;
