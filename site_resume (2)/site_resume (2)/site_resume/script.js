@@ -10,21 +10,6 @@ function sendMessage() {
     var phone = document.getElementById('phone').value;
     var message = document.getElementById('message').value;
 
-    // if (phone.value.length > 11) {
-    //     phone.value = phone.value.slice(0,11); 
-    //     return phone.value;
-    // }
-
-    // if (message.value.length > 150) {
-    //     message.value = message.value.slice(0,150); 
-    //     return phone.value;
-    // }
-
-    // if (name.value.length > 50) {
-    //     name.value = name.value.slice(0,50); 
-    //     return name.value;
-    // }
-
     if (name.trim() == '' || phone.trim() == '' || message.trim() == '') {
         alert('Пожалуйста, заполните все поля!');
     }
